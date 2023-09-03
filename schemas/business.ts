@@ -54,7 +54,7 @@ const businessSchema = {
       of: [{ type: 'string' }],
       options: {
         list: [
-          'Art', 'Business', 'Beauty', 'Drinks & Beverages', 'Entertainment', 'Experiences', 'Food', 'Finance', 'Fashion', 'Fitness', 'Homeware', 'Health', 'Islamic', 'Interiors & Furniture', 'Lifestyle', 'Literature', 'Luxury', 'Nutrition', 'Services', 'Travel', 'Technology', 'Venues',
+          'Art', 'Business', 'Beauty', 'Drinks & Beverages', 'Entertainment', 'Experiences', 'Food', 'Finance', 'Fashion', 'Family and Kids', 'Mosques', 'Fitness', 'Homeware', 'Health', 'Islamic', 'Interiors & Furniture', 'Lifestyle', 'Literature', 'Luxury', 'Nutrition', 'Services', 'Travel', 'Technology', 'Venues',
         ],
         layout: 'checkbox', // Layout as checkboxes
         max: 2, // Maximum of two categories can be selected
