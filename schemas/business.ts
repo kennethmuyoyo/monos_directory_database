@@ -40,6 +40,11 @@ const businessSchema = {
           title: 'Physical Address',
           type: 'string'
         },
+        {
+          name: 'location',
+          title: 'Location',
+          type: 'string'
+        },
       ],
     },
     {
@@ -70,6 +75,16 @@ const businessSchema = {
       name: 'longDescription',
       title: 'Long Description',
       type: 'text',
+    },
+    {
+      name: 'openingTime',
+      title: 'Opening Time',
+      type: 'string',
+    },
+    {
+      name: 'closingTime',
+      title: 'Closing Time',
+      type: 'string',
     },
     {
       name: 'logo',
