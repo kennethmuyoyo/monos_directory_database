@@ -9,6 +9,39 @@ const businessSchema = {
       type: 'string',
     },
     {
+      name: 'tagline',
+      title: 'Tagline',
+      type: 'string',
+    },
+    {
+      name: 'bookingMethods',
+      title: 'Booking Methods',
+      type: 'array', 
+      of: [{ type: 'string' }]
+    },
+    {
+      name: 'operationTimes',
+      title: 'Operation Times',
+      type: 'object',
+      fields: [
+        {
+          name: 'weekday',
+          title: 'Weekday Opening and Closing Times',
+          type: 'string'
+        },
+        {
+          name: 'weekend',
+          title: 'Weekends Opening and Closing Times',
+          type: 'string'
+        },
+        {
+          name: 'holiday',
+          title: 'Holiday Opening and Closing Times',
+          type: 'string'
+        },
+      ],
+    },
+    {
       name: 'featureImage',
       title: 'Feature Image',
       type: 'image',
@@ -53,8 +86,8 @@ const businessSchema = {
       type: 'url',
     },
     {
-      name: 'categories',
-      title: 'Categories',
+      name: 'category',
+      title: 'Category',
       type: 'array',
       of: [{ type: 'string' }],
       options: {
@@ -70,44 +103,44 @@ const businessSchema = {
       title: 'About Tag',
       type: 'array',
       of: [{ type: 'string' }],
-      options: {
-        list: [
-          'Fully Halal Menu', 
-          'Partial Halal Menu',
-          'No Alcohol Served',
-          'Alcohol Served ',
-          'No Pork Served',
-          'Pork Served',
-          'Takeout',
-          'Delivery',
-          'Buffet Style',
-          'Fine Dining',
-          'Cafe Style ',
-          'Catering Available ',
+      // options: {
+      //   list: [
+      //     'Fully Halal Menu', 
+      //     'Partial Halal Menu',
+      //     'No Alcohol Served',
+      //     'Alcohol Served ',
+      //     'No Pork Served',
+      //     'Pork Served',
+      //     'Takeout',
+      //     'Delivery',
+      //     'Buffet Style',
+      //     'Fine Dining',
+      //     'Cafe Style ',
+      //     'Catering Available ',
           
-          'Good for Families',
-          'Kid-Friendly',
-          'Good for Couples',
-          'Great for Birthdays',
-          'Special Occasions',
-          'Group Bookings',
-          'Great for Solo ',
+      //     'Good for Families',
+      //     'Kid-Friendly',
+      //     'Good for Couples',
+      //     'Great for Birthdays',
+      //     'Special Occasions',
+      //     'Group Bookings',
+      //     'Great for Solo ',
           
-          'Luxury Vibe',
-          'Relaxed Vibe',
-          'Romantic Vibe',
-          'Friendly Atmosphere',
-          'Instagrammable ',
-          'Parking On-Site',
-          'Wheelchair Accessible ',
-          'Open 24/7',
+      //     'Luxury Vibe',
+      //     'Relaxed Vibe',
+      //     'Romantic Vibe',
+      //     'Friendly Atmosphere',
+      //     'Instagrammable ',
+      //     'Parking On-Site',
+      //     'Wheelchair Accessible ',
+      //     'Open 24/7',
           
-          'Women-Only ',
-          'Men-Only ',
-          'Prayer Facilities',
-        ],
-        layout: 'checkbox', // Layout as checkboxes
-      },
+      //     'Women-Only ',
+      //     'Men-Only ',
+      //     'Prayer Facilities',
+      //   ],
+      //   layout: 'checkbox', // Layout as checkboxes
+      // },
     },
     {
       name: 'features',
